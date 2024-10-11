@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # google cloud key file
-Kfile.json
+kFile.json
