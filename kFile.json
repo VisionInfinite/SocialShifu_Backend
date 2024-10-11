@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fair-future-272207",
+  "private_key_id": "2398ddaafa229e76e157ba2138fa48ff9aeabd25",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCSFA7aJthxvG1E\nhvy7DpVrozBN4YJ1ao8KDwK6bQbXe5ki5aIdRpyC7Ou5i2wDfXV/4+kJOggdAPSR\nH2oZMil1zg/pthatgPCKcsHcLP6Z9zWLcGfFhU/F7OGZ/s+appoXU34ktnlqot/V\njxVHiOC2pwp0Fqji3NhQZ8P2wsT/ng1b4JoBIskkHymaSpbRPN6hZDuWOm/2EgAi\nzOpOUUSIc/FC+qra5PyrJPbO/SO57hj3auvkKvVfJEqkUuNYEtsCCMRd2d0Zrc2+\np5cWsnZ9bcWoME4VoBDfquQJ0BJVbwNGomSCw46uQk85gYqrc6DSM+k8DyLAFPGI\nKxcq3Z3/AgMBAAECggEARX7CZBmH7nAYwbnAgZNaFbewstR+trKHs17Zyuw0jY5R\nF8+MdQYTTpw9Nuvz6qMko7+/LXMMyhOaxnHeDXeWTuPGIUdN+aQ2i3816DQFuiTo\nNdq3m7ok7gIYgCVAChCJjWBcykV/dPJgr55fHsWpNmw4pmrjVO6BAJulGH+nrf2A\nosepB2ucWjgZGA/+3DjFL7hRoB0h7kA3wIYPpMKdBS2OOMs4X8i56tXO2i/p44Tt\nBAm94wOtk/DR3utCBpc+j6loQ5fql5amc63E5Noh7FzBVOSdky6ddT/M+bOo/aBG\nOUUj0loM4n9nkZNFlQxzDUBYqBrDvSgUPG/niX9NwQKBgQDK1cDzEedfYzTlwRM0\nx1w+9sLZRIIBdnXq9tW3H/yxdEfzn+fr++/EIMqqz0wS6rf+tRUNw67fIXSTOkoB\nnOENXETVq5agbl7jna3VS1LSetzi0DtsTbFp9Xj5iCdAg5Evcup1UJOi25vh8iJC\nqN7F50uJfMHt30NhR+Ym8pXhQQKBgQC4Xe3t283hBEKn2sR3Jp02weQ6tgAxi/H3\nrkOdyHgnVqyqu+L+j9zRFo/3Ex2/QqxFnMRT+FiDTLzTl3bDWCdg42IqzJ4nS+SQ\nY/L9oBxZ28OxX1QHYC/4xfu5FwAOwPh8KPwJuJcxy3aaRA95qpHdl7meUnOr2E0p\nTMsvV1BvPwKBgFqnnJxG9T05zsudNqNRMxZlHYMTznMu6dcBSVWWc08wpHPrlTFw\noaHr8gjTq7GMvH2Xm3hSbFcH0d13oNoFrsRU5+MD1MeRbNGYiLga+UJfbVfmL5jh\nRJkSAGauhrSb2Qj2+HlEcSfJtWsP2GYoqaCUFru1ScuyDKBvDRt9MqXBAoGBAI9o\n8QSOb6zShY7Pyvbr4GqRk5hfrfLcatFAinQXVe8zqof8MmvVN+ykYkPMaN03XY2g\njc7LZP5tGIx2SvlUfv0MonWsSHFExXvTY1YJz0POgIBeKJy8I1SdnFqzG2ZekGrz\n7mkZXvJq08zXmDoJhgEaXlZayIMpc4vmoj4m6vg9AoGBAKE9HfdZGbBD4ENFX6YZ\n19yLPFg/1twg0A/CDqq980ACkqZKSLe8t+2ykHhqZ1ML5GFyq5fLlNi5Lxvip2JS\nEdNRF3eH6FA9kCy04HktGq02ckc2/2iq4GwBHC4cM4sMULyMqOD7/IQauAtMqGfE\n57EggMLgPpfj1JJicePG33No\n-----END PRIVATE KEY-----\n",
+  "client_email": "vision@fair-future-272207.iam.gserviceaccount.com",
+  "client_id": "102723152064994043984",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vision%40fair-future-272207.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
