@@ -3,27 +3,28 @@ const {Storage} = require('@google-cloud/storage');
 const express = require('express');
 
 // Initializations and env variables
-const storage = new Storage();
 const router = express.Router();
 const projectID = process.env.PROJECT_ID;
 const bucketName = process.env.BUCKET_NAME;
-const keyFileName = process.env.KEYFILENAME;
+const keyFilename = process.env.KEYFILENAME;
+const storage = new Storage({projectID, keyFilename});
+
 
 async function uploadFile(bucketN,file,fileOutputName) {
     try{
-        const storage = new Storage({projectID, keyFileName});
         const bucket = storage.bucket(bucketN);
         const ret = await bucket.upload(file, {
             destination: fileOutputName
         });
-        console.log(ret);
+        return ret;
     }catch(error){
-        console.err(error);
+        console.error(error);
     }
 }
 (async ()=>{
-    uploadFile(bucketName,'TEST.TXT')
-})
+    const ret = await uploadFile(bucketName,'./TEST.TXT', 'cowo.txt');
+    console.log(ret);
+})();
 
 router.get('/', (req, res) => {
     res.send("hello world");
