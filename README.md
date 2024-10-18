@@ -6,7 +6,7 @@
 - BUCKET_NAME
 - KEYFILENAME
 
-  > ![NOTE]
+  > [!NOTE]
   > Make sure to include the service account `key` as `kFile.json` in the root directory.
 
 Documentation: https://vision-infinity.gitbook.io/socialshifu
