@@ -13,7 +13,7 @@ const storage = new Storage({ projectID, keyFilename });
 async function uploadFile(userID) {
   const options = {
     destination: `${userID}/filename.txt`,
-
+    // No preconditions as of now
     // preconditionOpts: { ifGenerationMatch: generrsationMatchPrecondition },
   };
   const filePath = "./TESTE.txt";
