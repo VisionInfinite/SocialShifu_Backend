@@ -9,40 +9,33 @@ const bucketName = process.env.BUCKET_NAME;
 const keyFilename = process.env.KEYFILENAME;
 const storage = new Storage({ projectID, keyFilename });
 
-// async function uploadFile(bucketN,file,fileOutputName) {
-//     try{
-//         const bucket = storage.bucket(bucketN);
-//         const ret = await bucket.upload(file, {
-//             destination: fileOutputName
-//         });
-//         return ret;
-//     }catch(error){
-//         console.error(error);
-//     }
-// }
-
-async function uploadFile() {
+// Uploading a file to a folder with name -> a unique ID of the user
+async function uploadFile(userID) {
   const options = {
-    destination: "destFileName.txt",
-    // Optional:
-    // Set a generation-match precondition to avoid potential race conditions
-    // and data corruptions. The request to upload is aborted if the object's
-    // generation number does not match your precondition. For a destination
-    // object that does not yet exist, set the ifGenerationMatch precondition to 0
-    // If the destination object already exists in your bucket, set instead a
-    // generation-match precondition using its generation number.
-    // preconditionOpts: { ifGenerationMatch: generationMatchPrecondition },
+    destination: `${userID}/filename.txt`,
+
+    // preconditionOpts: { ifGenerationMatch: generrsationMatchPrecondition },
   };
   const filePath = "./TESTE.txt";
   await storage.bucket(bucketName).upload(filePath, options);
   console.log(`${filePath} uploaded to ${bucketName}`);
 }
-uploadFile().catch(console.error);
+// To test run uploading a file (currently uploads a local file)
+// uploadFile("spiderboy").catch(console.error);
 
-// (async ()=>{
-//     const ret = await uploadFile(bucketName,'TESTE.TXT', 'cowoh.txt');
-//     console.log(ret);
-// })();
+// List all files in bucket
+async function listFiles() {
+  const [files] = await storage.bucket(bucketName).getFiles();
+
+  console.log("Files:");
+  files.forEach((file) => {
+    console.log(file.name);
+  });
+}
+// To test run listing files in the bucket
+// listFiles().catch(console.error);
+
+// Creating a folder in the bucket (each user with unique folder)
 
 router.get("/", (req, res) => {
   res.send("hello world");
