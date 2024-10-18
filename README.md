@@ -1,8 +1,8 @@
 ## Environment variables
 
-#### requires the following environment variable:
+#### Requires the following environment variables:
 
-- PROJECT_ID
+- PROJECT_ID: *the project id (from google cloud storage service account)*
 - BUCKET_NAME
 - KEYFILENAME
 
