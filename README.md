@@ -6,11 +6,7 @@
 - BUCKET_NAME
 - KEYFILENAME
 
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-  > [!NOTE]
-  > Make sure to include the service account `key` as `kFile.json` in the root directory.
+> [!NOTE]
+> Make sure to include the service account `key` as `kFile.json` in the root directory.
 
 Documentation: https://vision-infinity.gitbook.io/socialshifu
