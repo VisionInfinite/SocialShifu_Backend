@@ -7,7 +7,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 const xssClean = require("xss-clean");
 const rateLimit = require("express-rate-limit");
-const { clerkMiddleware, requireAuth } = require('@clerk/express');
+const { clerkMiddleware, requireAuth } = require("@clerk/express");
 const connectDB = require("./db/connect");
 const notFoundMiddleware = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handling");
@@ -19,8 +19,8 @@ app.use(express.json());
 app.use(clerkMiddleware());
 
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
-  max: 100
+  windowMs: 15 * 60 * 1000,
+  max: 100,
 });
 
 app.use(limiter);
@@ -31,8 +31,12 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-const authRouter = require('./routes/authRoute');
+const authRouter = require("./routes/authRoute");
 app.use("/api/v1/auth", authRouter);
+
+// Cloud server save and fetch routes
+const cloudRoutes = require("./routes/cloudStorage");
+app.use("/cloudServices/v1", cloudRoutes);
 
 //Example of a protected route
 // app.get("/protected", requireAuth(), (req, res) => {
@@ -46,9 +50,7 @@ const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
     console.log("connected to db");
-    app.listen(port, () =>
-      console.log(`Server is listening on port ${port}`)
-    );
+    app.listen(port, () => console.log(`Server is listening on port ${port}`));
   } catch (error) {
     console.log(error);
   }
